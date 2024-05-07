@@ -1,12 +1,6 @@
-const gnomeSort = (arr) => {
-  let index = 0;
-  while (index < arr.length) {
-    if (index === 0 || arr[index] >= arr[index - 1]) {
-      index++;
-    } else {
-      [arr[index], arr[index - 1]] = [arr[index - 1], arr[index]];
-      index--;
-    }
+function linearSearch(arr, target) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === target) return i;
   }
-  return arr;
-};
+  return -1;
+}
