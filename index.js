@@ -1,1 +1,2 @@
-const reverseWords = (str) => str.split(" ").reverse().join(" ");
+const initializeArrayWithRange = (end, start = 0) =>
+  Array.from({ length: end - start }, (_, i) => i + start);
